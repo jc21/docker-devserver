@@ -114,6 +114,7 @@ RUN cd /usr && wget -O- -nv https://raw.githubusercontent.com/golangci/golangci-
 RUN go install github.com/kyoh86/richgo@latest \
 	&& go install github.com/sonatype-nexus-community/nancy@latest \
 	&& go install github.com/mfridman/tparse@latest \
+	&& go install golang.org/x/vuln/cmd/govulncheck@latest \
 	&& rm -rf /root/.cache/go-build
 
 # Fix for golang dev:
